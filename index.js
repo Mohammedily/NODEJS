@@ -21,7 +21,7 @@ const movies = [{id:"100",name:"Iron man 2",poster:"https://m.media-amazon.com/i
 {id:"106",name:"Ratatouille",poster:"https://resizing.flixster.com/gL_JpWcD7sNHNYSwI1ff069Yyug=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzc4ZmJhZjZiLTEzNWMtNDIwOC1hYzU1LTgwZjE3ZjQzNTdiNy5qcGc=",rating:8,summary:"Remy, a rat, aspires to become a renowned French chef. However, he fails to realise that people despise rodents and will never enjoy a meal cooked by him.",trailer:"https://www.youtube.com/embed/NgsQ8mVkN8w"}]
 
 
-const PORT = 9000; 
+const PORT = process.env.PORT || 9000; 
 
 //
   const MONGO_URL = process.env.MONGO_URL;
